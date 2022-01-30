@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <h1 style = "font-family: Comic Sans MS;"> <center>  <u>   MY FAMILY DETAILS </u> </center> </h1> 
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FAMILY DETAILS </title>
+    
+
+</head>
+<body> 
+ <h3> The details of my family are: </h3> 
+<div>
+  
+  <form
+  style = "width: 1325px; height : 1000px; 
+  background-color:rgb(36, 211, 235) ;
+  border : 5px solid rgb(0, 0, 0) ; 
+   padding-top :40px ;
+    text-align : center; 
+    margin: 40px;
+     font-size: 20px">
+      
+
+     <h4>
+        <label> My name:  </label>
+        <input type = "text" id = "mn" value = "">
+        <p id="myname" style= "border: 2.5px solid black; border-radius: 20px;"> My name: </p>
+
+        <label> My age:  </label>
+        <input type = "number" id = "ma" value = "">
+        <p id="myage" style= "border: 2.5px solid black; border-radius: 20px;"> My age: </p>
+
+        <label> My father's name:  </label>
+        <input type = "text" id = "fn" value = "">
+        <p id="fathername style= "border: 2.5px solid black; border-radius: 20px;"> My father's name: </p>
+
+        <label> My father's age:  </label>
+        <input type = "number" id = "fa" value = "">
+        <p id="fatherage" style= "border: 2.5px solid black; border-radius: 20px;"> My father's age: </p>
+
+        <label> My mother's name:  </label>
+        <input type = "text" id = "mon" value = "">
+        <p id="mothername" style= "border: 2.5px solid black; border-radius: 20px;"> My mother's name: </p>
+
+        <label> My mother's age:  </label>
+        <input type = "number" id = "moa" value = "">
+        <p id="motherage" style= "border: 2.5px solid black; border-radius: 20px;"> My mother's age: </p>
+        
+        <label> My brother's name:  </label>
+        <input type = "text" id = "bn" value = "">
+        <p id="brothername" style= "border: 2.5px solid black; border-radius: 20px;"> My brother's name: </p>
+
+        <label> My brother's age:  </label>
+        <input type = "number" id = "ba" value = "">
+        <p id="brotherage" style= "border: 2.5px solid black; border-radius: 20px;"> My brother's age: </p>
+
+        <label> My sister's name:  </label>
+        <input type = "text" id = "sn" value = "">
+        <p id="sistername" style= "border: 2.5px solid black; border-radius: 20px;"> My sister's name: </p>
+
+        <label> My sister's age:  </label>
+        <input type = "number" id = "sa" value = "">
+        <p id="sisterage" style= "border: 2.5px solid black; border-radius: 20px;"> My sister's age: </p>
+
+
+     </h4>
+
+     <button type ="button" onclick = "displaying()"> Display details </button>
+    </form>
+    <script>
+    function displaying(){
+
+      var dismyname = document.getElementById("mn").value;
+      var dismyage = document.getElementById("ma").value;
+      var disfathername = document.getElementById("fn").value;
+      var disfatherage = document.getElementById("fa").value;
+      var dismothername = document.getElementById("mon").value;
+      var dismotherage = document.getElementById("moa").value;
+      var disbrothername = document.getElementById("bn").value;
+      var disbrotherage = document.getElementById("ba").value;
+      var dissistername = document.getElementById("sn").value;
+      var dissisterage = document.getElementById("sa").value;
+
+      document.getElementById("myname").innerHTML = "My name: "+dismyname;
+      document.getElementById("myage").innerHTML = "My age: "+dismyage;
+      document.getElementById("fathername").innerHTML = "My father's name: "+disfathername;
+      document.getElementById("fatherage").innerHTML = "My father's age: "+disfatherage;
+      document.getElementById("mothername").innerHTML = "My mother's name: "+dismothername;
+      document.getElementById("motherage").innerHTML = "My mother's age: "+dismotherage;
+      document.getElementById("brothername").innerHTML = "My brother's name: "+disbrothername;
+      document.getElementById("brotherage").innerHTML = "My brother's age: "+disbrotherage;
+      document.getElementById("sistername").innerHTML = "My sister's name: "+dissistername;
+      document.getElementById("sisterage").innerHTML = "My sister's age: "+dissisterage;
+
+    }
+
+    </script>
+</div>    
+</body>
+</html>
